@@ -1,4 +1,5 @@
 import '../auth/auth_util.dart';
+import '../backend/api_requests/api_calls.dart';
 import '../backend/backend.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
@@ -82,10 +83,15 @@ class _FeedPageWidgetState extends State<FeedPageWidget> {
                                 children: [
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(0, 0, 2, 0),
-                                    child: Icon(
-                                      Icons.favorite_border,
-                                      color: Colors.white,
-                                      size: 30,
+                                    child: InkWell(
+                                      onTap: () async {
+                                        await flutterFlowApiCall();
+                                      },
+                                      child: Icon(
+                                        Icons.favorite_border,
+                                        color: Colors.white,
+                                        size: 30,
+                                      ),
                                     ),
                                   ),
                                   Align(
