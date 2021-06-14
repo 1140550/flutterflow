@@ -1,6 +1,6 @@
 # quickounce
 
-A new Flutter project.
+A new Flutter 2 project.
 
 ## Getting Started
 
